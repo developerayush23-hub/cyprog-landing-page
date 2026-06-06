@@ -158,3 +158,71 @@ button:hover{
     color:#b8c1ec;
     line-height:1.7;
 }
+
+.evolution{
+    padding:120px 10%;
+}
+
+.evolution-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin-top:60px;
+}
+
+.evolution-card{
+    background:rgba(255,255,255,0.05);
+
+    border:1px solid rgba(0,245,255,0.2);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:0.4s;
+
+    backdrop-filter:blur(10px);
+}
+
+.evolution-card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 0 15px #00f5ff,
+    0 0 35px rgba(0,245,255,0.3);
+}
+
+.evolution-card span{
+    font-size:3rem;
+    color:#00f5ff;
+    display:block;
+    margin-bottom:20px;
+}
+
+.evolution-card h3{
+    color:#00f5ff;
+    margin-bottom:15px;
+}
+
+.evolution-card p{
+    color:#b8c1ec;
+    line-height:1.6;
+}
+
+@media(max-width:900px){
+
+    .evolution-container{
+        grid-template-columns:1fr 1fr;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .evolution-container{
+        grid-template-columns:1fr;
+    }
+
+}
