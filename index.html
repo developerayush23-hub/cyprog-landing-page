@@ -1,219 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CYBER-X 2077</title>
-
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CYBER-X 2077</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
-
 <body>
-    <div id="particles-js"></div>
 
-    <nav>
-        <div class="logo">CYBER-X</div>
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
 
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Technology</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+  <!-- Scanline Overlay -->
+  <div class="scanlines"></div>
 
-    <section class="hero">
+  <!-- NAV -->
+  <nav>
+    <div class="logo">CYBER<span class="logo-accent">-X</span></div>
+    <ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#evolution">Evolution</a></li>
+      <li><a href="#stats">Performance</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-cta">Initialize</button>
+  </nav>
 
-    <div class="hero-content">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid-overlay"></div>
 
-        <span class="tag">
-            NEXT GENERATION CYBORG TECHNOLOGY
-        </span>
+    <!-- LEFT: Text -->
+    <div class="hero-left" data-aos="fade-right" data-aos-duration="1000">
+      <div class="tag">
+        <span class="tag-dot"></span>
+        Next Generation Cyborg Technology
+      </div>
+      <h1 class="hero-title">
+        THE FUTURE
+        <span class="hero-accent glitch" data-text="IS HERE">IS HERE</span>
+      </h1>
+      <p class="hero-desc">
+        Experience the fusion of Artificial Intelligence,
+        Human Intelligence and Cybernetic Evolution.
+      </p>
+      <div class="buttons">
+        <button class="primary-btn">Explore Systems</button>
+        <button class="secondary-btn">Learn More</button>
+      </div>
 
-        <h1>
-            THE FUTURE IS HERE
-        </h1>
-
-        <p>
-            Experience the fusion of Artificial Intelligence,
-            Human Intelligence and Cybernetic Evolution.
-        </p>
-
-        <div class="buttons">
-            <button class="primary-btn">
-                Explore
-            </button>
-
-            <button class="secondary-btn">
-                Learn More
-            </button>
+      <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-target="99">0</span>
+          <span class="hero-stat-suffix">%</span>
+          <p class="hero-stat-label">Accuracy Rate</p>
         </div>
-
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-target="10">0</span>
+          <span class="hero-stat-suffix">M+</span>
+          <p class="hero-stat-label">Neural Links</p>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-target="500">0</span>
+          <span class="hero-stat-suffix">+</span>
+          <p class="hero-stat-label">AI Modules</p>
+        </div>
+      </div>
     </div>
 
-</section>
+    <!-- RIGHT: Cyborg Photo with HUD -->
+    <div class="hero-right" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+      <div class="photo-frame">
 
-<section class="features">
+        <!-- Rotating HUD rings -->
+        <div class="hud-ring hud-ring-1"></div>
+        <div class="hud-ring hud-ring-2"></div>
+        <div class="hud-ring hud-ring-3"></div>
 
-    <div class="section-title">
-        <h2>Core Enhancements</h2>
-        <p>
-            Advanced cybernetic systems designed to push human capabilities beyond limits.
-        </p>
+        <!-- Corner brackets -->
+        <div class="bracket bracket-tl"></div>
+        <div class="bracket bracket-tr"></div>
+        <div class="bracket bracket-bl"></div>
+        <div class="bracket bracket-br"></div>
+
+        <!-- Scan line sweep -->
+        <div class="scan-sweep"></div>
+
+        <!-- HUD data labels -->
+        <div class="hud-label hud-label-tl">
+          <span class="hud-label-key">SYS</span>
+          <span class="hud-label-val">ONLINE</span>
+        </div>
+        <div class="hud-label hud-label-tr">
+          <span class="hud-label-key">AUG</span>
+          <span class="hud-label-val">94.7%</span>
+        </div>
+        <div class="hud-label hud-label-bl">
+          <span class="hud-label-key">UNIT</span>
+          <span class="hud-label-val">CX-01</span>
+        </div>
+        <div class="hud-label hud-label-br">
+          <span class="hud-label-key">PWR</span>
+          <span class="hud-label-val">∞</span>
+        </div>
+
+        <!-- Glitch layers -->
+        <div class="photo-glitch-a"></div>
+        <div class="photo-glitch-b"></div>
+
+        <!-- The actual photo — replace src with your hosted image URL -->
+        <img
+          src="Screenshot 2026-06-07 005848.png"
+          alt="Aayush Kumar — Cyborg"
+          class="hero-photo"
+        />
+
+        <!-- Bottom HUD bar -->
+        <div class="hud-bar">
+          <span class="hud-bar-text">NEURAL LINK ESTABLISHED</span>
+          <span class="hud-bar-blink">█</span>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="section-title" data-aos="fade-up">
+      <span class="section-eyebrow">Core Systems</span>
+      <h2>Core Enhancements</h2>
+      <p>Advanced cybernetic systems designed to push human capabilities beyond limits.</p>
     </div>
 
     <div class="feature-container">
-
-        <div class="card">
-            <div class="icon">🧠</div>
-
-            <h3>Neural Interface</h3>
-
-            <p>
-                Connect directly with AI systems through advanced neural communication.
-            </p>
-        </div>
-
-        <div class="card">
-            <div class="icon">👁️</div>
-
-            <h3>Bionic Vision</h3>
-
-            <p>
-                Real-time analysis and enhanced perception powered by intelligent optics.
-            </p>
-        </div>
-
-        <div class="card">
-            <div class="icon">⚡</div>
-
-            <h3>Quantum Processing</h3>
-
-            <p>
-                Experience ultra-fast decision making with next-gen computational power.
-            </p>
-        </div>
-
-        <div class="card">
-            <div class="icon">🦾</div>
-
-            <h3>Cyber Strength</h3>
-
-            <p>
-                Enhanced physical performance through adaptive mechanical augmentation.
-            </p>
-        </div>
-
-        <div class="card">
-    <div class="icon">🔋</div>
-
-    <h3>Energy Core</h3>
-
-    <p>
-        Self-sustaining power systems capable of supporting continuous cybernetic operations.
-    </p>
-</div>
-
-<div class="card">
-    <div class="icon">🛡️</div>
-
-    <h3>Adaptive Defense</h3>
-
-    <p>
-        Intelligent protection systems that analyze threats and respond instantly.
-    </p>
-</div>
-
+      <div class="card" data-aos="fade-up" data-aos-delay="0">
+        <div class="card-glow"></div>
+        <div class="icon">🧠</div>
+        <h3>Neural Interface</h3>
+        <p>Connect directly with AI systems through advanced neural communication protocols.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-glow"></div>
+        <div class="icon">👁️</div>
+        <h3>Bionic Vision</h3>
+        <p>Real-time analysis and enhanced perception powered by intelligent optic systems.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-glow"></div>
+        <div class="icon">⚡</div>
+        <h3>Quantum Processing</h3>
+        <p>Ultra-fast decision making with next-gen computational power at your core.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-glow"></div>
+        <div class="icon">🦾</div>
+        <h3>Cyber Strength</h3>
+        <p>Enhanced physical performance through adaptive mechanical augmentation.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="400">
+        <div class="card-glow"></div>
+        <div class="icon">🔋</div>
+        <h3>Energy Core</h3>
+        <p>Self-sustaining power systems for continuous uninterrupted cybernetic operation.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="500">
+        <div class="card-glow"></div>
+        <div class="icon">🛡️</div>
+        <h3>Adaptive Defense</h3>
+        <p>Intelligent protection that analyzes threats and responds in microseconds.</p>
+      </div>
     </div>
+  </section>
 
-</section>
-
-<section class="evolution">
-
-    <div class="section-title">
-        <h2>Evolution Path</h2>
-        <p>
-            The journey from ordinary humans to cybernetic super intelligence.
-        </p>
+  <!-- EVOLUTION -->
+  <section class="evolution" id="evolution">
+    <div class="section-title" data-aos="fade-up">
+      <span class="section-eyebrow">Transformation Path</span>
+      <h2>Evolution Path</h2>
+      <p>The journey from ordinary humans to cybernetic super intelligence.</p>
     </div>
 
     <div class="evolution-container">
-
-        <div class="evolution-card">
-            <span>01</span>
-            <h3>Human</h3>
-            <p>Natural intelligence and biological capabilities.</p>
-        </div>
-
-        <div class="evolution-card">
-            <span>02</span>
-            <h3>Augmented Human</h3>
-            <p>Technology-assisted performance enhancement.</p>
-        </div>
-
-        <div class="evolution-card">
-            <span>03</span>
-            <h3>Cyborg</h3>
-            <p>Human and machine operating as one entity.</p>
-        </div>
-
-        <div class="evolution-card">
-            <span>04</span>
-            <h3>Super Intelligence</h3>
-            <p>The next stage of cognitive evolution.</p>
-        </div>
-
+      <div class="evolution-card" data-aos="fade-right" data-aos-delay="0">
+        <span>01</span>
+        <h3>Human</h3>
+        <p>Natural intelligence and biological capabilities.</p>
+      </div>
+      <div class="evolution-card" data-aos="fade-right" data-aos-delay="150">
+        <span>02</span>
+        <h3>Augmented Human</h3>
+        <p>Technology-assisted performance enhancement.</p>
+      </div>
+      <div class="evolution-card active" data-aos="fade-right" data-aos-delay="300">
+        <span>03</span>
+        <h3>Cyborg</h3>
+        <p>Human and machine operating as one entity.</p>
+      </div>
+      <div class="evolution-card" data-aos="fade-right" data-aos-delay="450">
+        <span>04</span>
+        <h3>Super Intelligence</h3>
+        <p>The next stage of cognitive evolution.</p>
+      </div>
     </div>
+  </section>
 
-</section>
-
-<section class="stats">
-
-    <div class="section-title">
-        <h2>System Performance</h2>
-        <p>
-            Advanced cybernetic capabilities operating beyond conventional limits.
-        </p>
+  <!-- STATS -->
+  <section class="stats" id="stats">
+    <div class="section-title" data-aos="fade-up">
+      <span class="section-eyebrow">Benchmarks</span>
+      <h2>System Performance</h2>
+      <p>Advanced cybernetic capabilities operating beyond conventional limits.</p>
     </div>
 
     <div class="stats-container">
-
-        <div class="stat-card">
-            <h3>99.9%</h3>
-            <p>Accuracy Rate</p>
-        </div>
-
-        <div class="stat-card">
-            <h3>10M+</h3>
-            <p>Neural Connections</p>
-        </div>
-
-        <div class="stat-card">
-            <h3>0.001ms</h3>
-            <p>Response Time</p>
-        </div>
-
-        <div class="stat-card">
-            <h3>500+</h3>
-            <p>AI Modules</p>
-        </div>
-
+      <div class="stat-card" data-aos="zoom-in" data-aos-delay="0">
+        <div class="stat-ring"></div>
+        <h3>99.9%</h3>
+        <p>Accuracy Rate</p>
+      </div>
+      <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+        <div class="stat-ring"></div>
+        <h3>10M+</h3>
+        <p>Neural Connections</p>
+      </div>
+      <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="stat-ring"></div>
+        <h3>0.001ms</h3>
+        <p>Response Time</p>
+      </div>
+      <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+        <div class="stat-ring"></div>
+        <h3>500+</h3>
+        <p>AI Modules</p>
+      </div>
     </div>
+  </section>
 
-</section>
-
-<footer class="footer">
-    <p>
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="footer-inner">
+      <div class="footer-logo">CYBER<span class="logo-accent">-X</span></div>
+      <div class="footer-status">
+        <span class="status-dot"></span>
+        <span class="footer-mono">SYS://ONLINE</span>
+      </div>
+      <p>
         Made with <span class="heart">❤</span> by <span class="creator">Aayush Kumar</span>
-    </p>
-</footer>
+      </p>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
 
 </body>
-
 </html>
