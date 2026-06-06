@@ -96,48 +96,65 @@ button:hover{
 }
 
 .features{
-    padding:100px 10%;
-    text-align:center;
+    padding:120px 10%;
 }
 
-.features h2{
-    font-size:50px;
-    margin-bottom:60px;
+.section-title{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.section-title h2{
+    font-size:3rem;
     color:#00f5ff;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    color:#b8c1ec;
+    max-width:700px;
+    margin:auto;
 }
 
 .feature-container{
-    display:flex;
-    justify-content:center;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:30px;
-    flex-wrap:wrap;
 }
 
 .card{
-    width:320px;
-
     background:rgba(255,255,255,0.05);
 
-    border:1px solid rgba(0,245,255,0.3);
+    border:1px solid rgba(0,245,255,0.2);
 
     border-radius:20px;
 
-    padding:30px;
-
-    backdrop-filter:blur(10px);
+    padding:35px;
 
     transition:0.4s;
+
+    backdrop-filter:blur(15px);
 }
 
 .card:hover{
-    transform:translateY(-10px);
+    transform:translateY(-12px);
 
     box-shadow:
-    0 0 20px #00f5ff,
-    0 0 40px rgba(0,245,255,0.3);
+    0 0 15px rgba(0,245,255,0.4),
+    0 0 35px rgba(0,245,255,0.2);
+}
+
+.icon{
+    font-size:3rem;
+    margin-bottom:20px;
 }
 
 .card h3{
     color:#00f5ff;
-    margin-bottom:20px;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#b8c1ec;
+    line-height:1.7;
 }
