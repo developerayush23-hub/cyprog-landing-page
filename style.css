@@ -7,7 +7,8 @@
 body{
     background:#050816;
     color:white;
-    font-family:Arial,sans-serif;
+    font-family:'Orbitron', sans-serif;
+    overflow-x:hidden;
 }
 
 nav{
@@ -39,36 +40,57 @@ ul li a{
 
 .hero{
     height:90vh;
-
     display:flex;
     justify-content:center;
     align-items:center;
-
     text-align:center;
 }
 
-.hero h1{
-    font-size:70px;
+.tag{
     color:#00f5ff;
+    letter-spacing:2px;
+}
+
+.hero h1{
+    font-size:90px;
+    margin:20px 0;
+
+    text-shadow:
+    0 0 10px #00f5ff,
+    0 0 20px #00f5ff,
+    0 0 30px #00f5ff;
 }
 
 .hero p{
-    margin-top:20px;
-    font-size:20px;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
 }
 
-button{
-    margin-top:30px;
+.buttons{
+    margin-top:40px;
+    
+}
 
-    padding:15px 30px;
-
-    border:none;
-
+.primary-btn{
     background:#00f5ff;
+    color:black;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
 
-    cursor:pointer;
+.secondary-btn{
+    background:transparent;
+    color:#00f5ff;
+    border:2px solid #00f5ff;
+    margin-left:15px;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
 
-    font-size:18px;
-
-    border-radius:10px;
+button:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
 }
