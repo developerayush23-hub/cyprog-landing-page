@@ -94,3 +94,50 @@ button:hover{
     transform:translateY(-5px);
     transition:0.3s;
 }
+
+.features{
+    padding:100px 10%;
+    text-align:center;
+}
+
+.features h2{
+    font-size:50px;
+    margin-bottom:60px;
+    color:#00f5ff;
+}
+
+.feature-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:320px;
+
+    background:rgba(255,255,255,0.05);
+
+    border:1px solid rgba(0,245,255,0.3);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    backdrop-filter:blur(10px);
+
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 0 20px #00f5ff,
+    0 0 40px rgba(0,245,255,0.3);
+}
+
+.card h3{
+    color:#00f5ff;
+    margin-bottom:20px;
+}
